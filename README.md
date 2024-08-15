@@ -6,8 +6,19 @@
 2. Google Calendar API를 사용하여 Event 생성
 3. Google Meet URL을 발급
 
----
-# 필요
+# 필요 라이브러리
+```
+implementation 'org.springframework.boot:spring-boot-starter-web'
+implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+implementation 'org.springframework.boot:spring-boot-starter-security'
+implementation 'com.auth0:java-jwt:4.4.0' // jwt 모듈
+implementation 'com.google.api-client:google-api-client:2.0.0'
+implementation 'com.google.oauth-client:google-oauth-client-jetty:1.34.1'
+implementation 'com.google.apis:google-api-services-calendar:v3-rev20220715-2.0.0'
+```
+
+# Application 설정
 
 - application-db.yml
 ```
